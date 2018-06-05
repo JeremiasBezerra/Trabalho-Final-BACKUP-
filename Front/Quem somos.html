@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <!--Configurações -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="pt-br">
+
+    <!--Bootstrap e Arquivos CSS-->
+    <link rel="stylesheet" href="css/Quem somos-styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/slideshow.css" />
+
+    <!--Arquivos JS -->
+    <script src="script/slideshow.js"></script>
+
+    <!--Fontes -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  </head>
+
+<body style="background-color:white">
+
+
+<!--Menu -->
+<div class="navbar" id="myNavbar">
+  <a class="navbar-brand">PETSHOW</a>
+  <a class="active"; style="text-decoration:none"; href="Quem somos.html"><i style="margin-right: 5px"; class="fas fa-home"></i>Início</a>
+  <a style="text-decoration:none"; href="Portfólio.html"><i style="margin-right: 5px"; class="fas fa-briefcase"></i>Portfólio</a>
+  <a style="text-decoration:none"; href="Contato.html"><i style="margin-right: 5px"; class="fas fa-envelope"></i>Contato</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  <script>
+  function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+          x.className += " responsive";
+      } else {
+          x.className = "navbar";
+      }
+  }
+  </script>
+</div>
+<hr class="Barra2">
+
+<!--Foto e Logo-->
+<div class="container">
+  <div class="row">
+    <div clas="col-md-06">
+      <img class="logo"; src="https://i.imgur.com/9Y7pLwU.jpg">
+    </div>
+    <div class="cold-md-06">
+      <img class="capa"; src="http://www.quikheal.com/images/dogs_cats_1.png">
+    </div>
+</div></div>
+
+<!--Quem Somos -->
+<div style="background:url(https://i.imgur.com/qQy3tVV.png); width:100%">
+  <hr class="Barra">
+
+  <!--Descrição-->
+  <p id="Centro-Titulo">QUEM SOMOS:</p>
+  <div class="container">
+    <div class="row">
+      <p id="Centro-Texto">Uma empresa destinada a oferecer o melhor tratamento para seu bichinho, com serviços e produtos de qualidade, atendimento diferenciado à disposição 24h por dia, ambiente agradável e toda a infraestrutura necessária para o seu pet nas áreas de saúde, estética e lazer. Oferecendo consultas, exames, cirurgias, internação, serviços especializados de estética e higiene, táxi dog preparado especialmente para levar e trazer o seu animal com segurança e comodidade, além de uma grande variedade de produtos, incluindo rações, medicamentos e diversos acessórios.</p>
+    </div>
+  </div>
+
+
+  <!--Scrpit das fotos-->
+  <figure>
+      <span class="trs next"></span>
+      <span class="trs prev"></span>
+      <div id="slider">
+        <a href="#" class="trs"><img id="slide"; src="https://i.imgur.com/LRMEhJX.png" height="300"/></a>
+        <a href="#" class="trs"><img id="slide"; src="https://i.imgur.com/1NPxVzx.png" height="300"/></a>
+        <a href="#" class="trs"><img id="slide"; src="https://i.imgur.com/l7wPc5B.png" height="300"/></a>
+      </div>
+      <figcaption></figcaption>
+  </figure>
+
+  <!--Direitos autorais-->
+  <div class="footer">
+      ©EJECT 2018
+  </div>
+
+</div>
+
+</body>
+</html>
