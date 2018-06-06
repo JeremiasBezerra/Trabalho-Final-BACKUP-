@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple MOOC - Uma simples plataforma de ensino a distância" />
+    <title>Simple MOOC</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="css/Contato-styles.css" />
+    <meta http-equiv="Content-Language" content="pt-br">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<!-- Botão subir ao topo -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+
+jQuery("#subirTopo").hide();
+
+jQuery('a#subirTopo').click(function () {
+         jQuery('body,html').animate({
+           scrollTop: 0
+         }, 800);
+        return false;
+   });
+
+jQuery(window).scroll(function () {
+         if (jQuery(this).scrollTop() > 100) {
+            jQuery('#subirTopo').fadeIn();
+         } else {
+            jQuery('#subirTopo').fadeOut();
+         }
+     });
+});
+</script>
+  </head>
+<body style="background-color:white">
+    <a id="subirTopo">
+        <img src="subir.png" style="height: 50px";"width: 50px">
+        </a>
+
+
+
+<!--Menu -->
+<div class="navbar" id="myNavbar">
+  <a class="navbar-brand">PETSHOW</a>
+  <a class="active"; style="text-decoration:none"; href="Quem somos.html"><i style="margin-right: 5px"; class="fas fa-home"></i>Início</a>
+  <a style="text-decoration:none"; href="Portfólio.html"><i style="margin-right: 5px"; class="fas fa-briefcase"></i>Portfólio</a>
+  <a style="text-decoration:none"; href="Contato.html"><i style="margin-right: 5px"; class="fas fa-envelope"></i>Contato</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  <script>
+  function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+          x.className += " responsive";
+      } else {
+          x.className = "navbar";
+      }
+  }
+  </script>
+</div>
+<hr class="Barra2">
+
+<!--Foto e Logo-->
+<div class="container">
+  <div class="row">
+    <div clas="col-md-06">
+      <img class="logo"; src="https://i.imgur.com/9Y7pLwU.jpg">
+    </div>
+    <div class="cold-md-06">
+      <img class="capa"; src="http://www.quikheal.com/images/dogs_cats_1.png">
+    </div>
+</div></div>
+
+<!--Linha-->
+<div style="background:url(https://i.imgur.com/qQy3tVV.png); width:100%">
+<hr class="Barra"></br></br>
+
+<!--Área de contato-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-1"></div>
+    <div class="col-md-6 col-md-offset-6">
+      <p class="texto1">CONTATE-NOS</p>
+      <!--JS do e-mail-->
+      <a style="background-color: red"; id="foxyform_embed_link_187301" href="http://br.foxyform.com/">foxyform</a>
+      <script class="email"; style="background-color: red"; type="text/javascript">
+      (function(d, t){
+         var g = d.createElement(t),
+             s = d.getElementsByTagName(t)[0];
+         g.src = "http://br.foxyform.com/js.php?id=187301&sec_hash=458ebdcbc29&width=350px";
+         s.parentNode.insertBefore(g, s);
+      }(document, "script"));
+      </script>
+      </div>
+    <div class="col-md-06">
+      <div class="Responsivo">
+        <p class="texto2">LOCALIZE-NOS</p>
+        <!--JS do mapa-->
+        <div class="col-md-1 col-md-offset-1"></div>
+        <div class="map-responsive">
+          <div style="text-align:center"; class="col-md-1 col-md-offset-1"></div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.7158966616807!2d-35.24054598570955!3d-5.75397269583001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b3aa418d0b2cb7%3A0xdf4be042be3b809c!2sAv.+Dr.+Jo%C3%A3o+Medeiros+Filho%2C+3585+-+2+-+Igap%C3%B3%2C+Natal+-+RN!5e0!3m2!1spt-PT!2sbr!4v1527620607475" width="450" height="330" frameborder="0" style="border:0" allowfullscreen; left:"50%"></iframe>
+        </div></br>  </br>
+      <div class="Social">
+          <p class="texto2">REDES SOCIAIS</p>
+      <a href="https://www.facebook.com/petshownatal/?ref=br_rs" target="_blank">
+        <img class="icone"; src="https://i.imgur.com/3XBJxFb.png" height="100px" width="100px"/>
+      </a>
+      <a style="padding:30px"; href="https://www.instagram.com/explore/tags/petshow/" target="_blank">
+        <img class="icone"; src="https://i.imgur.com/OeGsdBh.png" height="100px" width="100px"/>
+      </a>
+    </div>
+      </div>
+      </div></br>
+    </div>
+</div></br>
+<!--Direitos autorais-->
+<div class="footer">
+    ©EJECT 2018
+</div>
+</div>
+
+
+</body>
+</html>
