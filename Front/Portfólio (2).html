@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple MOOC - Uma simples plataforma de ensino a distância" />
+    <title>Simple MOOC</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="css/Portfólio-styles.css" />
+    <meta http-equiv="Content-Language" content="pt-br">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<!-- Botão subir ao Topo-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+
+jQuery("#subirTopo").hide();
+
+jQuery('a#subirTopo').click(function () {
+         jQuery('body,html').animate({
+           scrollTop: 0
+         }, 800);
+        return false;
+   });
+
+jQuery(window).scroll(function () {
+         if (jQuery(this).scrollTop() > 100) {
+            jQuery('#subirTopo').fadeIn();
+         } else {
+            jQuery('#subirTopo').fadeOut();
+         }
+     });
+});
+</script>
+</head>
+<body style="background-color:white">
+        <a id="subirTopo">
+                <img src="subir.png" style="height: 50px";"width: 50px">
+                </a>
+
+
+
+<!--Menu -->
+<div class="navbar" id="myNavbar">
+  <a class="navbar-brand">PETSHOW</a>
+  <a class="active"; style="text-decoration:none"; href="Quem somos.html"><i style="margin-right: 5px"; class="fas fa-home"></i>Início</a>
+  <a style="text-decoration:none"; href="Portfólio.html"><i style="margin-right: 5px"; class="fas fa-briefcase"></i>Portfólio</a>
+  <a style="text-decoration:none"; href="Contato.html"><i style="margin-right: 5px"; class="fas fa-envelope"></i>Contato</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  <script>
+  function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+          x.className += " responsive";
+      } else {
+          x.className = "navbar";
+      }
+  }
+  </script>
+</div>
+<hr class="Barra2">
+
+<!--Foto e Logo-->
+<div class="container">
+  <div class="row">
+    <div clas="col-md-06">
+      <img class="logo"; src="https://i.imgur.com/9Y7pLwU.jpg">
+    </div>
+    <div class="cold-md-06">
+      <img class="capa"; src="http://www.quikheal.com/images/dogs_cats_1.png">
+    </div>
+</div></div>
+
+<!--Linha-->
+<div style="background:url(https://i.imgur.com/qQy3tVV.png); width:100%">
+<hr class="Barra">
+
+<!--Portfólio-->
+<div class="content">
+     <div class="pure-g-r content-ribbon">
+         <div class="pure-u-2-3">
+             <div class="l-box">
+                 <h3 class="texto">ATENDIMENTO 24H</h3>
+                 <p>
+                   Estamos prontos para antender seu animal de estimação 24h por dia, seja para internação dos bichinhos que necessitam de tratamento clínico/ cirúrgico, ou para os que estão precisando do cuidado temporário do nosso hotel. Tudo com atendimento especializado, cuidados individuais e muito amor.
+                 </p>
+             </div>
+         </div>
+         <div class="pure-u-1-3">
+             <div id="volta"></div>
+             <div class="l-box"> 
+                <a href="#bg"> <img src="https://i.imgur.com/Zb3DT8T.jpg"
+                      alt="Atendimento."></a>
+                      <div id="bg"></div>
+<div class="box">
+    <img src="https://i.imgur.com/Zb3DT8T.jpg">
+    <a href="#volta" id="close">x </a>
+</div>
+             </div>
+         </div>
+     </div>
+     <hr class="Barra">
+     <div class="pure-g-r content-ribbon">
+         <div class="pure-u-1-3">
+             <div id="volta2"></div>
+             <div class="l-box">
+                    <a href="#bg2"> <img src="https://i.imgur.com/9j34xzc.jpg"
+                      alt="Clínica"></a>
+                    <div id="bg2"></div>
+                    <div class="box2">
+                        <img src="https://i.imgur.com/9j34xzc.jpg">
+                        <a href="#volta2" id="close2"> x </a>
+                    </div>
+             </div>
+         </div>
+         <div class="pure-u-2-3">
+             <div class="l-box">
+                 <h3  class="texto">CLÍNICA VETERINÁRIA</h3>
+                 <p>
+                   Contamos com uma clínica veterinária que dispõe de consultas de rotina, tratamentos, aplicação de vacinas, medicações e profissionais qualificados para cuidar do seu bichinho.
+                 </p>
+             </div>
+         </div>
+     </div>
+        <hr class="Barra">
+     <div class="pure-g-r content-ribbon">
+         <div class="pure-u-2-3">
+             <div class="l-box">
+                 <h3  class="texto">ESTÉTICA ANIMAL</h3>
+                 <p>
+                   Feito por profissionais qualificados e com produtos próprios para animais, realizamos banho, tosa, limpeza dos ouvidos, corte das unhas, entre outros  serviços. Buscando sempre garantir o conforto e bem estar do seu pet.
+                 </p>
+             </div>
+         </div>
+         <div class="pure-u-1-3">
+             <div id="volta3"></div>
+             <div class="l-box">
+                <a href="#bg3"> <img src="https://i.imgur.com/cXlVxOK.jpg"
+                      alt="Estética" ></a>
+                      <div id="bg3"></div>
+<div class="box3">
+    <img src="https://i.imgur.com/cXlVxOK.jpg">
+    <a href="#volta3" id="close3">x </a>
+</div>
+
+             </div>
+         </div>
+     </div>
+        <hr class="Barra">
+     <div class="pure-g-r content-ribbon">
+         <div class="pure-u-1-3">
+             <div id="volta4"></div>
+             <div class="l-box">
+
+                 <a href="#bg4"><img src="https://i.imgur.com/8wTFPpX.jpg"
+                      alt="Produtos"></a>
+                      <div id="bg4"></div>
+<div class="box4">
+    <img src="https://i.imgur.com/8wTFPpX.jpg">
+    <a href="#volta4" id="close4">x </a>
+</div>
+
+             </div>
+         </div>
+         <div class="pure-u-2-3">
+             <div class="l-box">
+                 <h3 class="texto">PRODUTOS</h3>
+                 <p style="text-align: justify">
+                   Disponibilizamos dos melhores produtos do mercado para alimentação, suplementação, medicação e embelezamento, além de acessórios e muitas novidades para o seu bichinho. Tudo isso por um preço acessível e qualidade garantida.                 </p>
+             </div>
+
+         </div>
+     </div>
+        <hr class="Barra">
+     <div class="pure-g-r content-ribbon">
+         <div class="pure-u-2-3">
+             <div class="l-box">
+                 <h3 class="texto">TÁXI DOG</h3>
+                 <p>
+                   Oferecemos um serviço de transporte que possibilita buscar e levar o seu animalzinho com conforto, segurança e qualidade.
+                 </p>
+             </div>
+         </div>
+            <hr class="Barra">
+         <div class="pure-u-1-3">
+             <div id="volta5"></div>
+             <div class="l-box">
+                <a href="#bg5"><img class="Foto"; src="https://i.imgur.com/snOFXXx.jpg"
+                      alt="Táxi."></a>
+                      <div id="bg5"></div>
+<div class="box5">
+    <img src="https://i.imgur.com/snOFXXx.jpg">
+    <a href="#volta5" id="close5">x </a>
+</div>
+
+             </div>
+         </div>
+     </div>
+</div>
+
+<!--Direitos autorais-->
+<div class="footer">
+    ©EJECT 2018
+</div>
+</div>
+
+</body>
+</html>
