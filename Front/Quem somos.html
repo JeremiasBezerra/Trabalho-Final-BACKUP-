@@ -1,27 +1,48 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-    <!--Configurações -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Language" content="pt-br">
-
-    <!--Bootstrap e Arquivos CSS-->
+    <meta name="description" content="Simple MOOC - Uma simples plataforma de ensino a distância" />
+    <title>Simple MOOC</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
     <link rel="stylesheet" href="css/Quem somos-styles.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/slideshow.css" />
-
-    <!--Arquivos JS -->
-    <script src="script/slideshow.js"></script>
-
-    <!--Fontes -->
+    <meta http-equiv="Content-Language" content="pt-br">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/slideshow.css" />
+    <script src="script/slideshow.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!-- Botão subir ao Topo-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+
+jQuery("#subirTopo").hide();
+
+jQuery('a#subirTopo').click(function () {
+         jQuery('body,html').animate({
+           scrollTop: 0
+         }, 800);
+        return false;
+   });
+
+jQuery(window).scroll(function () {
+         if (jQuery(this).scrollTop() > 100) {
+            jQuery('#subirTopo').fadeIn();
+         } else {
+            jQuery('#subirTopo').fadeOut();
+         }
+     });
+});
+</script>
 
   </head>
-
 <body style="background-color:white">
+    <a id="subirTopo">
+        <img src="subir.png" style="height: 50px";"width: 50px">
+        </a>
 
 
 <!--Menu -->
@@ -42,6 +63,7 @@
   }
   </script>
 </div>
+
 <hr class="Barra2">
 
 <!--Foto e Logo-->
@@ -55,37 +77,38 @@
     </div>
 </div></div>
 
-<!--Quem Somos -->
+<!--Linha-->
 <div style="background:url(https://i.imgur.com/qQy3tVV.png); width:100%">
-  <hr class="Barra">
+<hr class="Barra">
+<p id="Centro-Titulo">QUEM SOMOS:</p>
 
-  <!--Descrição-->
-  <p id="Centro-Titulo">QUEM SOMOS:</p>
-  <div class="container">
-    <div class="row">
-      <p id="Centro-Texto">Uma empresa destinada a oferecer o melhor tratamento para seu bichinho, com serviços e produtos de qualidade, atendimento diferenciado à disposição 24h por dia, ambiente agradável e toda a infraestrutura necessária para o seu pet nas áreas de saúde, estética e lazer. Oferecendo consultas, exames, cirurgias, internação, serviços especializados de estética e higiene, táxi dog preparado especialmente para levar e trazer o seu animal com segurança e comodidade, além de uma grande variedade de produtos, incluindo rações, medicamentos e diversos acessórios.</p>
-    </div>
+<!--Descrição-->
+<div class="container">
+  <div class="row">
+    <p id="Centro-Texto">Uma empresa destinada a oferecer o melhor tratamento para seu bichinho, com serviços e produtos de qualidade, atendimento diferenciado à disposição 24h por dia, ambiente agradável e toda a infraestrutura necessária para o seu pet nas áreas de saúde, estética e lazer. Oferecendo consultas, exames, cirurgias, internação, serviços especializados de estética e higiene, táxi dog preparado especialmente para levar e trazer o seu animal com segurança e comodidade, além de uma grande variedade de produtos, incluindo rações, medicamentos e diversos acessórios.</p>
   </div>
-
-
-  <!--Scrpit das fotos-->
-  <figure>
-      <span class="trs next"></span>
-      <span class="trs prev"></span>
-      <div id="slider">
-        <a href="#" class="trs"><img id="slide"; src="https://i.imgur.com/LRMEhJX.png" height="300"/></a>
-        <a href="#" class="trs"><img id="slide"; src="https://i.imgur.com/1NPxVzx.png" height="300"/></a>
-        <a href="#" class="trs"><img id="slide"; src="https://i.imgur.com/l7wPc5B.png" height="300"/></a>
-      </div>
-      <figcaption></figcaption>
-  </figure>
-
-  <!--Direitos autorais-->
-  <div class="footer">
-      ©EJECT 2018
-  </div>
-
 </div>
 
+
+<!--Scrpit das fotos-->
+
+<figure style="border-radius: 5%">
+    <span class="trs next"></span>
+    <span class="trs prev"></span>
+
+    <div id="slider">
+      <a href="#" class="trs"><img id="slide"; src="https://i.imgur.com/LRMEhJX.png" height="300"/></a>
+      <a href="#" class="trs"><img id="slide"; src="https://i.imgur.com/1NPxVzx.png" height="300"/></a>
+      <a href="#" class="trs"><img id="slide"; src="https://i.imgur.com/l7wPc5B.png" height="300"/></a>
+    </div>
+
+    <figcaption></figcaption>
+  </figure>
+
+<!--Direitos autorais-->
+<div class="footer">
+    ©EJECT 2018
+</div>
+</div>
 </body>
 </html>
